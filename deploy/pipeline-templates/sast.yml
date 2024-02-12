@@ -3,7 +3,7 @@
 parameters:
 - name: failPipelineOnError
   type: boolean
-  default: true
+  default: false
 
 stages:
 - stage: Defender_SAST
@@ -20,6 +20,6 @@ stages:
         # categories: string. Optional. A comma-separated list of analyzer categories to run. Values: 'secrets', 'code', 'artifacts', 'IaC', 'containers. Example: 'IaC,secrets'. Defaults to all.
         # languages: string. Optional. A comma-separated list of languages to analyze. Example: 'javascript,typescript'. Defaults to all.
         # tools: 'templateanalyzer'
-          break: true
+          break: failPipelineOnError
         # publish: boolean. Optional. If true, will publish the output SARIF results file to the chosen pipeline artifact. Default: true.
         # artifactName: string. Optional. The name of the pipeline artifact to publish the SARIF result file to. Default: CodeAnalysisLogs*.c
