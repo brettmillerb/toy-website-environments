@@ -1,8 +1,0 @@
-resources:
-  repositories:
-    - repository: defenderSAST
-    name: Innersourcing
-    type: git
-
-stages:
-- template: templates/defender.yml@defenderSAST
