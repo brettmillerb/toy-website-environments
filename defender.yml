@@ -6,6 +6,4 @@ resources:
       ref: refs/heads/main
 
 extends:
-  template: /templates/defender.yml@innersourcing
-  parameters:
-    tools: templateanalyzer
+  template: templates/defender.yml@innersourcing
