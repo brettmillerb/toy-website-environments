@@ -4,5 +4,5 @@ resources:
       name: brettmillerb/Innersourcing
       type: git
 
-extends:
-  template: templates/defender.yml@defenderSAST
+jobs:
+- template: templates/defender.yml@defenderSAST
