@@ -1,8 +1,8 @@
 resources:
   repositories:
-    - repository: innersourcing
+    - repository: defenderSAST
       name: Innersourcing
       type: git
 
 extends:
-  template: templates/defender.yml@innersourcing
+  template: templates/defender.yml@defenderSAST
