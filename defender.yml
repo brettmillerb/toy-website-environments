@@ -3,7 +3,6 @@ resources:
     - repository: innersourcing
       name: brettmillerb/Innersourcing
       type: git
-      ref: refs/heads/main
 
 extends:
   template: templates/defender.yml@innersourcing
