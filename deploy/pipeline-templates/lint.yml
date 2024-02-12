@@ -6,3 +6,7 @@ jobs:
         az bicep build --file deploy/main.bicep
       name: LintBicepCode
       displayName: Run Bicep linter
+    
+    - task: MicrosoftSecurityDevOps@1
+      displayName: Run Defender SAST Scans & Upload Results
+      break: true
