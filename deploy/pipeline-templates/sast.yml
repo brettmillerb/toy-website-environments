@@ -10,7 +10,7 @@ stages:
   displayName: Run Defender for DevOps SAST Scans
   jobs:
   - job:
-    - steps:
+    steps:
       - task: MicrosoftSecurityDevOps@1
         displayName: 'Run Microsoft Security DevOps SAST Checks'
           inputs:
