@@ -1,7 +1,7 @@
 resources:
     repositories:
         - repository: innersourcing
-          name: brettmillerb/Innersourcing
+          name: Innersourcing
           type: git
           ref: refs/heads/main
 
