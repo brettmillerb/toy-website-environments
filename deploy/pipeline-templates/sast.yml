@@ -1,1 +1,20 @@
-# Template
+# yaml-language-server: $schema=./deploy.yml
+
+parameters:
+- name: failPipelineOnError
+  type: boolean
+  default: false
+
+steps:
+- task: MicrosoftSecurityDevOps@1
+  displayName: 'Run Microsoft Security DevOps SAST Checks'
+    inputs:
+    # command: 'run' | 'pre-job' | 'post-job'. Optional. The command to run. Default: run
+    # config: string. Optional. A file path to an MSDO configuration file ('*.gdnconfig').
+    # policy: 'azuredevops' | 'microsoft' | 'none'. Optional. The name of a well-known Microsoft policy. If no configuration file or list of tools is provided, the policy may instruct MSDO which tools to run. Default: azuredevops.
+    # categories: string. Optional. A comma-separated list of analyzer categories to run. Values: 'secrets', 'code', 'artifacts', 'IaC', 'containers. Example: 'IaC,secrets'. Defaults to all.
+    # languages: string. Optional. A comma-separated list of languages to analyze. Example: 'javascript,typescript'. Defaults to all.
+    # tools: 'templateanalyzer'
+        break: failPipelineOnError
+    # publish: boolean. Optional. If true, will publish the output SARIF results file to the chosen pipeline artifact. Default: true.
+    # artifactName: string. Optional. The name of the pipeline artifact to publish the SARIF result file to. Default: CodeAnalysisLogs*.c
