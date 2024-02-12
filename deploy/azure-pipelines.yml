@@ -15,10 +15,10 @@ stages:
   - template: pipeline-templates/lint.yml
 
 # Trigger Defender for DevOps SAST Scan
-- stage: SAST Scan & Upload
-  jobs:
-  - template: pipeline-templates/sast.yml
-
+- template: pipeline-templates/sast.yml
+  parameters:
+    failPipelineOnError: true
+  
 # Deploy to the test environment.
 - template: pipeline-templates/deploy.yml
   parameters:
