@@ -9,4 +9,5 @@ jobs:
     
     - task: MicrosoftSecurityDevOps@1
       displayName: Run Defender SAST Scans & Upload Results
-      break: true
+      inputs:
+        break: true
