@@ -4,5 +4,8 @@ resources:
       name: Innersourcing
       type: git
 
-jobs:
-- template: templates/defender.yml@defenderSAST
+stages:
+  - stage: DefenderSAST
+  displayName: 'Run Defender SAST against Bicep Code'
+  jobs:
+    - template: templates/defender.yml@defenderSAST
