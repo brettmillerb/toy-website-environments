@@ -1,11 +1,11 @@
 resources:
   repositories:
     - repository: innersourcing
-      name: Innersourcing
+      name: brettmillerb/Innersourcing
       type: git
       ref: refs/heads/main
 
 extends:
-  template: /templates/defender.yml@Innersourcing
+  template: /templates/defender.yml@innersourcing
   parameters:
     tools: templateanalyzer
