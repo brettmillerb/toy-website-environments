@@ -1,9 +1,9 @@
 # yaml-language-server: $schema=./deploy.yml
 
-parameters:
-- name: failPipelineOnError
-  type: boolean
-  default: false
+# parameters:
+# - name: failPipelineOnError
+#   type: boolean
+#   default: false
 
 jobs:
 - job:
