@@ -1,7 +1,7 @@
 resources:
   repositories:
     - repository: defenderSAST
-      name: brettmillerb/Innersourcing
+      name: Innersourcing
       type: git
 
 jobs:
